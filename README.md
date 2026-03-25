@@ -18,7 +18,7 @@ Thanks to rp2350 pio features this board has excellent capabilities
 * CPU ticks per one time unit 1
 * CPU ticks per one second 200000000
 
-So this device has 5ns resolution per one unit. Max frequency it is able to generate is 33 Mhz
+So this device has 5ns resolution per one unit. Max frequency it is able to generate is 33 MHz
 
 ### UART commands
 
