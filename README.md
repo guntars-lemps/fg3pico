@@ -4,7 +4,7 @@ Fg3pico is 3 channels frequency generator for pico2, it should be compatible wit
 
 * Frequency outputs are digital, the pins used for output are GP2, GP3, GP4
 * Generator is driven by UART commads. UART pins used are default GP0 and GP1
-* UART over USB can be used. It automatically switch over to USB when USB host is connected
+* UART over USB can be used. It automatically switches over to USB when USB host is connected
 * Each frequency has startup delay, 'on' period and 'off' period adjustable parameters. Also generation can be turned off independently for each channel
 * Frequency parameters can be stored in on-board flash memory and loaded from flash.
 * At board power-up it checks if there are frequencies stored. They are loaded from flash memory and generation starts automatically, no need to connect and setup by UART
