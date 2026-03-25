@@ -1,4 +1,4 @@
-Fg3pico is 3 channels frequency generator for pico2, it should be compatible with any RP3250 board (but not tested). It can be used for various purposes, for example, it can drive 3 phase motors or can be used for 3 phase AC generation
+Fg3pico is 3 channels frequency generator based on Raspberry Pi Pico 2, it should be compatible with any RP3250 board (but not tested). It can be used for various purposes, for example, it can drive 3 phase motors or can be used for 3 phase AC generation
 
 ### Features ###
 
