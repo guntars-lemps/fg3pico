@@ -1,0 +1,23 @@
+.program fg3pio
+.pio_version 1
+.fifo txget
+.side_set 1
+
+    mov osr, rxfifo[0] side 0
+    mov x, osr         side 0
+loop0:
+    jmp x-- loop0      side 0
+
+.wrap_target
+    mov osr, rxfifo[1] side 1
+    mov x, osr         side 1
+
+loop2:
+    jmp x-- loop2      side 1
+
+    mov osr, rxfifo[2] side 0
+    mov x, osr         side 0
+loop3:
+    jmp x-- loop3      side 0
+
+.wrap
