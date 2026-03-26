@@ -21,7 +21,7 @@ pico_generate_pio_header(pico_fg3 ${CMAKE_CURRENT_LIST_DIR}/pio_fg3.pio)
 target_sources(pico_fg3 PRIVATE pico_fg3.c)
 
 # pull in common dependencies
-target_link_libraries(pico_fg3 pico_stdlib hardware_pio)
+target_link_libraries(pico_fg3 pico_stdlib hardware_pio hardware_flash)
 
 # create map/bin/hex file etc.
 pico_add_extra_outputs(pico_fg3)

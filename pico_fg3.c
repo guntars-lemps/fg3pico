@@ -266,8 +266,8 @@ bool set_frequencies(uint8_t* buffer, uint pio_program_offset)
 
     // reset all state machine PC pointers
     pio_sm_exec(pio0, 0, pio_encode_jmp(pio_program_offset));
-    pio_sm_exec(pio1, 0, pio_encode_jmp(pio_program_offset));
-    pio_sm_exec(pio2, 0, pio_encode_jmp(pio_program_offset));
+    pio_sm_exec(pio0, 1, pio_encode_jmp(pio_program_offset));
+    pio_sm_exec(pio0, 2, pio_encode_jmp(pio_program_offset));
 
     // Enable state machines which have "on" > 0
     pio_set_sm_mask_enabled(pio0, ((f1_on > 0) ? 0x01 : 0) | ((f2_on > 0) ? 0x02 : 0) | ((f3_on > 0) ? 0x04 : 0), true);
