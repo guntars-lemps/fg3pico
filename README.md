@@ -77,12 +77,12 @@ The UART speed is 19200 bps. All values use big endian byte ordering (highest by
   </table>
    
 * Command 02 - STORE TO FLASH  
-  Stores current frequencies to eeprom
+  Stores current frequencies in flash memory
   |0x02|0x81|0x3E|
   |---|---|---|
 
 * Command 03 - LOAD FROM FLASH  
-  Loads frequencies from eeprom, this is done also at the reset (startup)
+  Loads frequencies from the flash, this is done also at the reset (startup)
   |0x03|0x41|0xFF|
   |---|---|---|
 
